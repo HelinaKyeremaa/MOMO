@@ -55,7 +55,7 @@ class Account {
                 return false;
             } else {
                 balance -= amount;
-                cout << amount << " cedis sent to " << recipient << ". Your new balance is " << balance << " dollars." << endl;
+                cout << amount << " cedis sent to " << recipient << ". Your new balance is " << balance << " cedis." << endl;
                 return true;
             }
         }
@@ -69,17 +69,16 @@ int main() {
     while (true) {
         // Prompt user for action
         int choice;
-        cout << "What would you like to do?" << endl;
-        cout << "1. Authenticate" << endl;
-        cout << "2. Reset PIN" << endl;
-        cout << "3. Check balance" << endl;
-        cout << "4. Send money" << endl;
-        cout << "5. Exit" << endl;
+        cout << "1. Transfer Money" << endl;
+        cout << "2. MoMoPay & Pay Bill" << endl;
+        cout << "3. Airtime & Bundles" << endl;
+        cout << "4. Allow Cash Out" << endl;
+        cout << "5. Financial Service" << endl;
+        cout << "5. My Wallet" << endl;
         cin >> choice;
 
         switch (choice) {
             case 1: {
-                // Authenticate user
                 int enteredPin;
                 cout << "Enter your PIN: ";
                 cin >> enteredPin;
